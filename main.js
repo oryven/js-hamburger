@@ -2,9 +2,11 @@
 
 // creare le variabili prendendo le classi di riferimento
 
-const apri = document.querySelector (".fa-bars");
+const apri = document.querySelector (".fas");
 
-const chiudi = document.querySelector (".close")
+const chiudi = document.querySelector (".close");
+
+const hamburgerMenu = document.querySelector (".hamburger-menu.active");
 
 // attivare con il clik le funzioni di apertura e chiusura
 
@@ -12,7 +14,7 @@ apri.addEventListener("click",
 
     function() {
 
-        
+        hamburgerMenu.style.displey = "blok";
 
     }
 
@@ -22,7 +24,7 @@ chiudi.addEventListener("click",
 
     function() {
 
-
+        hamburgerMenu.style.displey = "none";
 
     }
 
